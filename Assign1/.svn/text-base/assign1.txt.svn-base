@@ -1,0 +1,24 @@
+Assign1: Due 11:59PM September 24th
+
+Using Test First Development implement the program that we designed in HW1.
+Do not let the design that was created in HW1 constraint us.
+
+When you complete the coding (and only after you do), answer the following:
+
+Compare the design that's living in the code with the design we came up with in HW1.
+
+	The design didn't match up at all. The language was changed from c++ to ruby sice I was more familiar with rspec testing in ruby vs testing frameworks in C++. One major difference is due to the language and because ruby is lightweight, is the elimination of the cell class. Instead just a method that checks states(dead or alive) was used and another method to check neighbors. The GUI just iterates through the sequence and shows the current state of the grid and does not accept user input.
+
+What are some of the things you learned while working on this assignment, take away
+points that will help us in future design/development.
+
+	What I took away from the assignment is how important TDD is. It was very painful starting over from scratch after the reviews, but once I was on the right track, the TDD proved to be quite helpful. I'm more confident in my code then if I were to just write it without testing and "click monkey" test it along the way.
+
+Did you have fun working on the assignment?
+
+	The assignment was fun, while I did struggle along the way I learned many new things. I learned how to use rspec more, learned how to write a simple GUI in shoes. And most imporantly what I forced myself to do was write tests before I wrote code for the majority of the program. Overall it was a great learning experience and I have new knowledge to take away from it.
+	
+	
+	
+Notes for program:
+GUI is shoes and can be installed with "gem install green_shoes"

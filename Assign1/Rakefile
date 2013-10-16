@@ -1,0 +1,14 @@
+require 'simplecov'
+SimpleCov.start
+
+require 'rspec/core/rake_task'
+
+task :run_driver do
+	load 'src/game_of_life_gui.rb'
+end
+
+RSpec::Core::RakeTask.new(:spec)
+
+task :default => :spec
+
+task :default => :run_driver

@@ -1,0 +1,22 @@
+Total [100]: 88
+
+Program runs [20]: -2
+Works, but how do I select the initial live cells.
+
+Test quality [20]:
+Test Coverage [10]:
+
+Code quality [10]: -5
+detect_neighbors: Long methods are evil, this is the first thing
+we should avoid.
+
+Design quality [10]: -5
+next_iteration: Too much going on in this funciton
+create_grid: Does not belong here
+place_live_cells_in_grid: Does not belong here
+
+Cell: YAGNI
+
+GUI code quality [10]:
+Directory structure, etc. [10]:
+Response to questions [10]:
