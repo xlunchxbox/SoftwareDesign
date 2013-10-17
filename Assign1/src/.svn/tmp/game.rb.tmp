@@ -1,7 +1,0 @@
-ALIVE = true
-DEAD = false
-def alive?(state, number_of_neighbors)
-  if (number_of_neighbors >= 2 && number_of_neighbors < 4 && state == ALIVE) || number_of_neighbors == 3 && state == DEAD
-    ALIVE
-  end
-end
