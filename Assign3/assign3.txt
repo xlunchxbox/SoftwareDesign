@@ -1,0 +1,37 @@
+Assignment 3: Due 11:59PM Nov. 8
+
+A company is in the business of buying long pipes in wholesale and selling them in pieces.
+For example, they could buy a piece which is 30 inches long and sell it as 30 pieces,
+each one inch in length. Alternately, they could sell it as a few pieces that are 2 inches,
+a few that are 3 inches, etc.
+
+The price for each length varies from time to time. For example, some times a 1-inch piece may sell for
+$3, while a 2 inch piece may cell for $4. In this case, given a 3-inch pipe, the company will make
+a revenue of $9 if they sell it as three 1-inch pieces. However, they will make only a revenue of $7 if they
+split it into two pieces of 1-inch and 2- inches. On the other hand, if the price for 1-inch falls to $2 and 
+the price for 2-inches goes to $5, the company is better off selling it in two pieces of 2-inches and 1-inch.
+
+We are asked to write a program to determine the ways to split the pipes to maximize revenue. We're given
+as input, the length of the whole pipe, the prices for each inch from 1 to the given length. For example,
+10, 1, 2, 2, 4, 4, 5, 6, 6, 7, 8 is a sample input for pipe length 10 and prices for each length 1 to 10 inches.
+
+We can solve this problem using recursion and memoization. The main idea of recursion is as follows.
+
+max revenue for pipe size n = 
+	maximum of (
+		max revenue for pipe with no split,
+		max revenue for pipe split to (n - 1)-inches and 1-inch,
+		max revenue for pipe split to (n - 2)-inches and 2-inch,
+		...
+		)
+
+In the recursive solution, a computation for a size combination is invoked multiple times. For example,
+when computing max revenue for pipe split to (n - 1)-inches and 1-inch, we will invoke the computation
+for max revenue for pipe split to (n - 2)-invoke and 2-inch. This will again be invoked later when
+the max for the further split is computed. This recursive re-evaluation can slow down the processing.
+This is where memoization comes in. It saves the result if a computation is already done and simply
+returns that result instead if re-evaluating.
+
+First solve the problem using recursion. Only after the recursive solution is complete, solve
+the problem using memoization. Ensure the result of these two computations are the same. Further
+ensure that the memoization is substantially faster than the recursive solution.

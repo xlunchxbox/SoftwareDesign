@@ -1,0 +1,82 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/SVN/SD/cruz_kambhampati/Assign3/src/memoized.rb": [
+        1,
+        null,
+        1,
+        1,
+        11,
+        null,
+        null,
+        1,
+        431,
+        65,
+        null,
+        431,
+        null,
+        null
+      ],
+      "/SVN/SD/cruz_kambhampati/Assign3/src/recursive.rb": [
+        1,
+        null,
+        1,
+        49272,
+        null,
+        49272,
+        24808,
+        null,
+        null,
+        49272,
+        null,
+        null,
+        null
+      ],
+      "/SVN/SD/cruz_kambhampati/Assign3/spec/recursive_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        11,
+        null,
+        null
+      ],
+      "/SVN/SD/cruz_kambhampati/Assign3/spec/timing_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1383970621
+  }
+}
