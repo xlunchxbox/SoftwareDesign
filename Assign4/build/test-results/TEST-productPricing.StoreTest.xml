@@ -1,0 +1,16 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="productPricing.StoreTest" tests="10" failures="0" errors="0" timestamp="2013-11-28T02:34:15" hostname="localhost" time="0.013">
+  <properties/>
+  <testcase name="testInvalidProduct" classname="productPricing.StoreTest" time="0.008"/>
+  <testcase name="testGetPriceForValidProduct" classname="productPricing.StoreTest" time="0.0"/>
+  <testcase name="testGetTaxRateForInvalidLocation" classname="productPricing.StoreTest" time="0.0"/>
+  <testcase name="testInvalidLocation" classname="productPricing.StoreTest" time="0.0"/>
+  <testcase name="testListOfProductsForCAWithReduction" classname="productPricing.StoreTest" time="0.001"/>
+  <testcase name="testGetPriceForInvalidProduct" classname="productPricing.StoreTest" time="0.0"/>
+  <testcase name="testTotalSalesPrice" classname="productPricing.StoreTest" time="0.001"/>
+  <testcase name="testCanary" classname="productPricing.StoreTest" time="0.0"/>
+  <testcase name="testListOfProductsForTxandNoReduction" classname="productPricing.StoreTest" time="0.001"/>
+  <testcase name="testGetTaxRateForValidLocation" classname="productPricing.StoreTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

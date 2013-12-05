@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+apply from: 'https://github.com/valkolovos/gradle_cobertura/raw/master/repo/gradle_cobertura/gradle_cobertura/1.0/coberturainit.gradle'
+
+sourceCompatibility = 1.7
+test.scanForTestClasses = false
+
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['test']
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: "4.+"
+}
+
+repositories {
+  mavenCentral()
+}
+
+
+cobertura {
+  coverageSourceDirs = sourceSets.main.java.srcDirs
+}
+
+test {
+  jvmArgs '-XX:-UseSplitVerifier'
+  include '**/*Test.class'
+}
+
+defaultTasks 'clean','cobertura', 'test'

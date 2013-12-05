@@ -1,0 +1,70 @@
+Assignment 4 Due 11:59PM Nov. 27th
+
+A store sells different kinds of products. For each product, the store
+has to apply sales tax. The tax they apply for each item depends on 
+two things.
+
+A. the residence of the customer
+B. any waiver or reduction in tax for a particular product, for example
+souvenirs have a lowered rate of 0.1% in some tax areas but not others.
+
+The application that fulfills the order right now only handles sales of
+two products and two taxation areas.
+
+class TShirt {
+  public double getPrice(TaxArea taxArea) {
+	  return salesPrice + salesPrice * taxArea.rate();
+  }
+}
+
+class Souvenir {
+  public double getPrice(TaxArea taxArea) {
+    double reduction = 0;
+    if (taxArea instanceof TXTaxArea)
+     reduction = 0.1;
+
+	return salesPrice + salesPrice * (taxArea.rate() - reduction);
+  }
+}
+
+The store wants you to enhance the software so that
+
+A. more types of items can be included
+
+B. more tax areas can be supported
+
+They want you to redesign so that once you're done, no code has to change
+(but small new code can be added) to accommodate a new tax area or new
+type of item for sale.
+
+Write a class that will accept a list of items and compute the total
+price (items are still responsible for returning their total price
+including tax). Test it with one or two items and tax areas. Once you're done,
+try adding a new tax area and a new item and ensure no code change is
+necessary.
+
+
+
+
+1. Explain what design principles are being violated by the original design.
+
+a. It violates OCP which is evident by the use of RTTI. It is also violating OCP because if I wanted to add a new item I now have to create and code a whole a new item. It should be able to be flexible where I can just instantiate an "item" of any type, not coded to a specific type of item.
+
+b. It also violates DRY principle. We can have one class and create objects of that class to represent items rather than having multiple classes for multiple items in the store.
+
+c. There is also a violation of LSP. The Souvenir class is using an instance of taxArea but instead of extending the calculation of a tax area with just reduction, it is replacing it with it’s own calculation.
+
+
+
+2. Redesign and reimplement the code to fix those issues.
+
+
+3. Explain what design principles you are using in your solution.
+
+   We are favoring composition over inheritance. We are also aiming to not violate DRY, SRP, and OCP. Our methods are currently only doing one thing and one thing well. Also our implementation is honoring DRY, the same can be said for our tests which use a setUp method to avoid duplication across our tests. Most importantly we are solving OCP from the previous solution given to us. Our implementation  can have multiple items/areas added in a store without having to add a substantial amount of code to the class.
+
+4. What design pattern are you using?
+
+Iterator Design Pattern
+
+The design pattern that we are following is the Iterator Design Pattern. Our design, following this pattern allows for a way to access the elements of an aggregate object and does not expose the underlying representation in the class. This is accomplished with our private maps: productPrices, taxAreasRates, and productTaxAreasReductions. Access to these class map variables is controlled with our Store constructor. Our getPrice method iterates through our collection by taking in a list of products and a given location. From here using an internal iterator it can determine the proper sales price for a product and a reduction if necessary. After this another internal iterator is used in the method getTotalSale to calculate the entire sale of a transaction. With our current implementation a GUI could be easily added that could display our products by iterating through the collection.

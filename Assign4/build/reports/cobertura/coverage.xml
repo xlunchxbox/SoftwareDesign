@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="1.0" branch-rate="1.0" lines-covered="27" lines-valid="27" branches-covered="12" branches-valid="12" complexity="2.5" version="1.9.4.1" timestamp="1385606056136">
+	<sources>
+		<source>/SVN/SD/cruz_kambhampati/Assign4/src</source>
+	</sources>
+	<packages>
+		<package name="productPricing" line-rate="1.0" branch-rate="1.0" complexity="2.5">
+			<classes>
+				<class name="productPricing.Store" filename="productPricing/Store.java" line-rate="1.0" branch-rate="1.0" complexity="2.5">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="17" hits="10" branch="false"/>
+								<line number="18" hits="10" branch="false"/>
+								<line number="19" hits="10" branch="false"/>
+								<line number="20" hits="10" branch="false"/>
+								<line number="21" hits="10" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPrice" signature="(Ljava/util/ArrayList;Ljava/lang/String;)Ljava/lang/Double;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="26" hits="4" branch="false"/>
+								<line number="27" hits="4" branch="false"/>
+								<line number="29" hits="4" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="31" hits="6" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="32" hits="1" branch="false"/>
+								<line number="35" hits="5" branch="false"/>
+								<line number="39" hits="6" branch="false"/>
+								<line number="40" hits="4" branch="false"/>
+								<line number="42" hits="4" branch="false"/>
+							</lines>
+						</method>
+						<method name="getPriceForProduct" signature="(Ljava/lang/String;)D" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="75" hits="7" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="76" hits="5" branch="false"/>
+								<line number="78" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getReduction" signature="(Ljava/lang/String;Ljava/lang/String;)D" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="57" hits="5" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="58" hits="2" branch="false"/>
+								<line number="60" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="getTotalSale" signature="(Ljava/util/ArrayList;)Ljava/lang/Double;" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="47" hits="5" branch="false"/>
+								<line number="49" hits="5" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="50" hits="9" branch="false"/>
+								<line number="52" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="taxRate" signature="(Ljava/lang/String;)D" line-rate="1.0" branch-rate="1.0">
+							<lines>
+								<line number="66" hits="13" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="67" hits="11" branch="false"/>
+								<line number="69" hits="2" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="17" hits="10" branch="false"/>
+						<line number="18" hits="10" branch="false"/>
+						<line number="19" hits="10" branch="false"/>
+						<line number="20" hits="10" branch="false"/>
+						<line number="21" hits="10" branch="false"/>
+						<line number="26" hits="4" branch="false"/>
+						<line number="27" hits="4" branch="false"/>
+						<line number="29" hits="4" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="31" hits="6" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="32" hits="1" branch="false"/>
+						<line number="35" hits="5" branch="false"/>
+						<line number="39" hits="6" branch="false"/>
+						<line number="40" hits="4" branch="false"/>
+						<line number="42" hits="4" branch="false"/>
+						<line number="47" hits="5" branch="false"/>
+						<line number="49" hits="5" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="50" hits="9" branch="false"/>
+						<line number="52" hits="5" branch="false"/>
+						<line number="57" hits="5" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="58" hits="2" branch="false"/>
+						<line number="60" hits="3" branch="false"/>
+						<line number="66" hits="13" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="67" hits="11" branch="false"/>
+						<line number="69" hits="2" branch="false"/>
+						<line number="75" hits="7" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="76" hits="5" branch="false"/>
+						<line number="78" hits="2" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
